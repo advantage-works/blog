@@ -24,7 +24,7 @@ $message = "入力してください";
 //postが2つ、つまり入力が2つあるとき
 if (count($_POST) == 2) {
     $pdo = dbconnect();
-    $Statement = $pdo->prepare("select * from user where username = :inputname");
+    $Statement = $pdo->prepare("select * from user where mailaddress = :inputname");
     $Statement->bindValue(":inputname", $_POST["inputname"], PDO::PARAM_STR);
     $Statement->execute();
     if (!($dbpassword = $Statement->fetch(PDO::FETCH_ASSOC))) {
