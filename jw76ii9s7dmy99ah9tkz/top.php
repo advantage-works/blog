@@ -43,6 +43,7 @@ $_SESSION["time"] = time();
                 <h3>ようこそ、<?=validate($_SESSION["name"])?>さん</h3>
                 <ul>
                     <li><a href="makearticle.php">記事を投稿する</a></li>
+                    <li><a href="makepointtag.php">ポイントタグを作成する</a></li>
                     <li><a href="editarticleselect.php">記事を編集する</a></li>
                     <li><a href="deletearticle.php">記事を削除する</a></li>
                     <li><a href="makecategory.php">カテゴリを新設する</a></li>
