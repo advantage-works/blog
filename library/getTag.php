@@ -7,7 +7,7 @@ function getHead(string $title): void
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>' . validate($title) . "-ITブログ" . '</title>
+    <title>' . validate($title) . "-Advantage IT" . '</title>
     <link rel="stylesheet" href="https://advantage-works.net/blogtest/reset.css">
     <link rel="stylesheet" href="https://advantage-works.net/blogtest/style.css">
     <link rel="stylesheet" href="https://advantage-works.net/blogtest/style600.css">
@@ -18,7 +18,7 @@ function getHead(string $title): void
 function getHeader(): void
 {
     echo '<header>
-    <h1><a href="https://advantage-works.net/blogtest/">これはITブログ予定地です</a></h1>
+    <h1><a href="https://advantage-works.net/blogtest/">Advantage IT</a></h1>
     </header>';
 }
 
@@ -26,7 +26,7 @@ function getHeader(): void
 function getAdminHeader(): void
 {
     echo '<header>
-    <h1><a href="https://advantage-works.net/blogtest/jw76ii9s7dmy99ah9tkz/top.php">これはITブログ予定地管理画面です</a></h1>
+    <h1><a href="https://advantage-works.net/blogtest/jw76ii9s7dmy99ah9tkz/top.php">Advantage IT管理画面</a></h1>
     </header>';
 }
 
@@ -63,7 +63,7 @@ function getError(string $errorMessage): void
 {
     echo '<!DOCTYPE html>
     <html lang="ja">';
-    getHead("エラー-ITブログ");
+    getHead("エラー-Advantage IT");
     echo  '<body>';
     getHeader();
     echo '<article>
@@ -85,7 +85,7 @@ function getAdminError(string $errorMessage): void
 {
     echo '<!DOCTYPE html>
     <html lang="ja">';
-    getHead("エラー-ITブログ");
+    getHead("エラー-Advantage IT");
     echo  '<body>';
     getAdminHeader();
     echo '<article>
