@@ -191,6 +191,11 @@ article .contents-body .section-body{
     padding:10px;
 }
 
+pre{
+    width:100%;
+    overflow-x: scroll;
+}
+
 /*
 引用文調整
 */

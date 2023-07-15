@@ -50,7 +50,7 @@ function cleanTag(string $inputHTML): string
     $config = HTMLPurifier_Config::createDefault();
     $config->set("Core.Encoding", "UTF-8");
     $config->set("Core.Language", "ja");
-    $config->set("HTML.AllowedElements", array("div", "span", "p", "a"));
+    $config->set("HTML.AllowedElements", array("div", "span", "p", "a", "pre", "code"));
 
     $purifier = new HTMLPurifier($config);
     return $purifier->purify(deleteControlCode($inputHTML));
