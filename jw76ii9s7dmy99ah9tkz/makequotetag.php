@@ -13,14 +13,14 @@ checkPostGet($_POST, $_GET, "[01]", "0");
 $ans = "";
 
 if (count($_POST) == 1) {
-    if (array_keys($_POST)[0] != "pointBody") {
+    if (array_keys($_POST)[0] != "quoteBody") {
         getAdminError("不正なパラメータが送られました。");
     }
     //入力文字列が存在する場合、返答文字列を作成
     //固定部分
-    $ans = "<div class=\"point\"><h4 class=\"point-title\">Point</h4><div class=\"point-body\">";
+    $ans = "<div class=\"quote\"><h4 class=\"quote-title\">参考</h4><div class=\"quote-body\">";
     //入力部分
-    $ans = $ans . $_POST["pointBody"];
+    $ans = $ans . $_POST["quoteBody"];
     //固定部分
     $ans = $ans . "</div></div>";
     //エスケープ
@@ -54,15 +54,15 @@ $_SESSION["time"] = time();
     <article>
             
         <div class="title">
-            <h2>ポイントタグ作成</h2>
+            <h2>引用タグ作成</h2>
         </div>
         <div class="contents-body">
             <section>
-                <h3>ポイントにしたい文章</h3>
+                <h3>引用にしたい文章</h3>
                 <div class="section-body">
-                    <form name="point" action="makepointtag.php" method="post">
+                    <form name="point" action="makequotetag.php" method="post">
                         <p>内容</p>
-                        <textarea name="pointBody" rows="5" cols="50"><?=$ans?></textarea>
+                        <textarea name="quoteBody" rows="5" cols="50"><?=$ans?></textarea>
                         <button type="submit">作成する</button>  
                     </form>
                 </div>
@@ -72,3 +72,6 @@ $_SESSION["time"] = time();
     <?php getFooter(); ?>
 </body>
 </html>
+
+
+

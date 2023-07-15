@@ -44,6 +44,7 @@ $_SESSION["time"] = time();
                 <ul>
                     <li><a href="makearticle.php">記事を投稿する</a></li>
                     <li><a href="makepointtag.php">ポイントタグを作成する</a></li>
+                    <li><a href="makequotetag.php">引用タグを作成する</a></li>
                     <li><a href="editarticleselect.php">記事を編集する</a></li>
                     <li><a href="deletearticle.php">記事を削除する</a></li>
                     <li><a href="makecategory.php">カテゴリを新設する</a></li>
