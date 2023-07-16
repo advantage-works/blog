@@ -7,11 +7,13 @@ body{
     font-weight: 400;
     color: #333;
     background-color: #f6fbfd;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 h1{
     font-size: 24px;
     font-weight: 900;
+    font-family: 'Press Start 2P', cursive;
 }
 
 h2{
